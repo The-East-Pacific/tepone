@@ -13,7 +13,7 @@ export default defineConfig({
         src: './src/assets/logo.png',
         replacesTitle: false,
       },
-      favicon: '/favicon.svg',
+      favicon: '/favicon.ice',
       customCss: ['./src/styles/custom.css'],
       components: {
         Footer: './src/components/Footer.astro',
