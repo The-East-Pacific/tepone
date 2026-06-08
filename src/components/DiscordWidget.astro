@@ -1,10 +1,11 @@
 ---
 // Reusable Discord widget embed
-// Usage: <DiscordWidget />
+const { theme = 'dark' } = Astro.props;
 ---
+
 <div class="discord-widget">
   <iframe
-    src="https://discord.com/widget?id=633351482128728064&theme=dark"
+    src={`https://discord.com/widget?id=633351482128728064&theme=${theme}`}
     width="100%"
     height="500"
     allowtransparency="true"
@@ -21,6 +22,10 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(242, 242, 240, 0.08);
     max-width: 500px;
+  }
+  :global([data-theme='light']) .discord-widget {
+    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
   iframe { display: block; }
 </style>
