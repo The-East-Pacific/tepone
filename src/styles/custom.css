@@ -1,10 +1,3 @@
-/* ============================================================
-   Tep Worlds brand overrides for Starlight
-   This file is loaded after Starlight's defaults,
-   so anything we declare here wins.
-   ============================================================ */
-
-/* Brand palette */
 :root {
   --tep-green:       #1A6F34;
   --tep-green-light: #2A8C4A;
@@ -17,22 +10,20 @@
   --tep-dim:         #7A7077;
 }
 
-/* Starlight uses these CSS variables. We override them
-   to point at our brand colors. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+/* ===== Dark theme (default) ===== */
 :root {
-  /* Accent: yellow for primary actions, highlights, focus rings */
   --sl-color-accent-low:    #4a4410;
   --sl-color-accent:        var(--tep-yellow);
   --sl-color-accent-high:   #f8ee5e;
 
-  /* Backgrounds */
   --sl-color-bg:            var(--tep-dark);
   --sl-color-bg-nav:        rgba(40, 31, 36, 0.8);
   --sl-color-bg-sidebar:    var(--tep-dark-deep);
   --sl-color-bg-inline-code:#3D3340;
   --sl-color-bg-accent:     rgba(245, 228, 35, 0.12);
 
-  /* Text */
   --sl-color-white:         var(--tep-light);
   --sl-color-gray-1:        #D8D2D6;
   --sl-color-gray-2:        var(--tep-muted);
@@ -41,49 +32,58 @@
   --sl-color-gray-6:        var(--tep-dark-deep);
   --sl-color-black:         var(--tep-dark-deep);
 
-  /* Custom typography */
   --sl-font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --sl-font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
 }
 
-/* Make headings pop with a more distinctive display font */
-:root {
-  --sl-font-system: 'Inter', system-ui, sans-serif;
-  --__sl-font: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+/* ===== Light theme ===== */
+:root[data-theme='light'] {
+  --sl-color-accent-low:    #fff8b8;
+  --sl-color-accent:        #c8b91e;
+  --sl-color-accent-high:   #8a7e0d;
+
+  --sl-color-white:         #1a1418;
+  --sl-color-bg:            #f8f6f0;
+  --sl-color-bg-nav:        rgba(248, 246, 240, 0.9);
+  --sl-color-bg-sidebar:    #efece4;
+  --sl-color-bg-inline-code:#e8e4d8;
+  --sl-color-bg-accent:     rgba(26, 111, 52, 0.12);
+
+  --sl-color-gray-1:        #2a2429;
+  --sl-color-gray-2:        #4a4046;
+  --sl-color-gray-3:        #6a6066;
+  --sl-color-gray-5:        #d8d4cc;
+  --sl-color-gray-6:        #c8c4bc;
+  --sl-color-black:         #1a1418;
 }
 
-/* Load Space Grotesk for headings */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-
-/* Apply the display font to headings */
 .sl-markdown-content h1,
 .sl-markdown-content h2,
 .sl-markdown-content h3,
 .sl-markdown-content h4,
 .sl-markdown-content h5,
 .sl-markdown-content h6,
-.sl-anchor-link,
-.content-panel h1,
 .hero h1 {
   font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif !important;
   font-weight: 700;
   letter-spacing: -0.015em;
 }
 
-/* Subtle accent on inline links */
 .sl-markdown-content a:not(:hover) {
   color: var(--tep-teal);
 }
 
-/* Sidebar styling */
-starlight-menu-button + nav,
 nav.sl-nav {
   background: rgba(40, 31, 36, 0.7);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(242, 242, 240, 0.06);
 }
 
-/* Card-style link cards (used on the homepage) */
+:root[data-theme='light'] nav.sl-nav {
+  background: rgba(248, 246, 240, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .card {
   background: var(--tep-dark-deep) !important;
   border: 1px solid rgba(242, 242, 240, 0.08) !important;
@@ -96,14 +96,23 @@ nav.sl-nav {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 60px rgba(245, 228, 35, 0.08) !important;
 }
 
-/* Custom scrollbar */
+:root[data-theme='light'] .card {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+:root[data-theme='light'] .card:hover {
+  border-color: var(--tep-green) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: var(--tep-dark-deep); }
 ::-webkit-scrollbar-thumb { background: #4a4046; border-radius: 5px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--tep-yellow); }
 
-/* Selection color */
-::selection {
-  background: var(--tep-yellow);
-  color: var(--tep-dark-deep);
-}
+:root[data-theme='light'] ::-webkit-scrollbar-track { background: #e8e4d8; }
+:root[data-theme='light'] ::-webkit-scrollbar-thumb { background: #b8b0a8; }
+
+::selection { background: var(--tep-yellow); color: var(--tep-dark-deep); }
+:root[data-theme='light'] ::selection { background: var(--tep-green); color: white; }
