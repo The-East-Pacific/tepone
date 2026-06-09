@@ -1,7 +1,13 @@
 {
-  "updated": "2026-06-09T15:14:10.635Z",
+  "updated": "2026-06-09T20:11:04.154Z",
   "source": "https://forum.theeastpacific.com/latest.rss",
   "items": [
+    {
+      "title": "Welcome estyquesada",
+      "url": "https://forum.theeastpacific.com/t/welcome-estyquesada/19869",
+      "author": "estyquesada",
+      "date": "2026-06-09"
+    },
     {
       "title": "[PROPOSAL] Commend Brethren",
       "url": "https://forum.theeastpacific.com/t/proposal-commend-brethren/19867",
@@ -55,12 +61,6 @@
       "url": "https://forum.theeastpacific.com/t/passed-repeal-the-civil-charter-of-the-world-assembly/19846",
       "author": "Bai_Lung",
       "date": "2026-05-31"
-    },
-    {
-      "title": "HOGS Amendment Omnibus",
-      "url": "https://forum.theeastpacific.com/t/hogs-amendment-omnibus/19843",
-      "author": "Ladona",
-      "date": "2026-05-29"
     }
   ]
 }
