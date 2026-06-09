@@ -1,30 +1,30 @@
-name: Deploy to GitHub Pages
+name: Sync Forum and Deploy
 
 on:
-  # Trigger on pushes to main
   push:
     branches: [main]
-  # Allow manual trigger from the Actions tab
   workflow_dispatch:
+  schedule:
+    - cron: '0 */3 * * *' # every 3 hours
 
-# Sets permissions for the deployment
 permissions:
-  contents: read
+  contents: write # needed to push the sync commit
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: 'pages'
   cancel-in-progress: false
 
 jobs:
-  build:
-    name: Build
+  sync-and-build:
+    if: github.actor!= 'github-actions[bot]' # prevent infinite loop
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -32,10 +32,28 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install
+        run: npm ci
 
-      - name: Build the site
+      - name: Sync Discourse topics
+        run: node scripts/sync-discourse.mjs
+        env:
+          # add if you need an API key later
+          NODE_ENV: production
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/content/blog/
+          if! git diff --cached --quiet; then
+            git commit -m "chore: sync forum topics [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Build site
         run: npm run build
 
       - name: Setup Pages
@@ -47,8 +65,7 @@ jobs:
           path: './dist'
 
   deploy:
-    name: Deploy
-    needs: build
+    needs: sync-and-build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
