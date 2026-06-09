@@ -37,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Sync Discourse topics
-        run: node scripts/sync-discourse.mjs
+        run: node scripts/fetch-rss.js
         env:
           NODE_ENV: production
 
