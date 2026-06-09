@@ -33,7 +33,6 @@
   --sl-font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
 }
 
-/* Light theme */
 :root[data-theme='light'] {
   --sl-color-accent-low:    #fff8b8;
   --sl-color-accent:        #a89616;
@@ -54,7 +53,6 @@
   --sl-color-black:         #1a1418;
 }
 
-/* Typography */
 .sl-markdown-content {
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 1.0625rem;
@@ -65,7 +63,7 @@
 .hero h1 {
   font-family: 'Climate Crisis', 'Space Grotesk', sans-serif !important;
   font-weight: 400;
-  font-variation-settings: 'YEAR' 1979;
+  font-variation-settings: "YEAR" 1979;
   text-transform: uppercase;
   line-height: 0.9;
   letter-spacing: 0;
@@ -81,7 +79,6 @@
   letter-spacing: -0.015em;
 }
 
-/* Links */
 .sl-markdown-content a:not(:hover) {
   color: var(--tep-teal);
 }
@@ -93,7 +90,6 @@
   color: #2d7d7a;
 }
 
-/* Nav */
 nav.sl-nav {
   background: rgba(40, 31, 36, 0.7);
   backdrop-filter: blur(12px);
@@ -104,7 +100,71 @@ nav.sl-nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* Cards */
 .card {
   background: var(--tep-dark-deep) !important;
-  border: 1px solid rgba(242, 
+  border: 1px solid rgba(242, 242, 240, 0.08) !important;
+  border-radius: 14px !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.card:hover {
+  border-color: var(--tep-yellow) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 60px rgba(245, 228, 35, 0.08) !important;
+}
+:root[data-theme='light'] .card {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+:root[data-theme='light'] .card:hover {
+  border-color: var(--tep-green) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--tep-dark-deep); }
+::-webkit-scrollbar-thumb { background: #4a4046; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: var(--tep-yellow); }
+:root[data-theme='light'] ::-webkit-scrollbar-track { background: #e8e4d8; }
+:root[data-theme='light'] ::-webkit-scrollbar-thumb { background: #b8b0a8; }
+
+::selection { background: var(--tep-yellow); color: var(--tep-dark-deep); }
+:root[data-theme='light'] ::selection { background: var(--tep-green); color: white; }
+
+:root[data-theme='light'] .discord-widget {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+:root[data-theme='light'] .tep-footer {
+  background: #efece4 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+:root[data-theme='light'] .tep-footer-brand { color: #1a1418 !important; }
+:root[data-theme='light'] .tep-footer-links a { color: #4a4046 !important; }
+:root[data-theme='light'] .tep-footer-links a:hover { color: var(--tep-green) !important; }
+:root[data-theme='light'] .tep-footer-copy { color: #6a6066 !important; }
+
+:root[data-theme='light'] .forum-feed {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+:root[data-theme='light'] .forum-feed li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+:root[data-theme='light'] .forum-feed li:hover { background: #f8f6f0 !important; }
+:root[data-theme='light'] .forum-feed a { color: #1a1418 !important; }
+:root[data-theme='light'] .forum-feed a:hover { color: var(--tep-green) !important; }
+:root[data-theme='light'] .forum-meta { color: #6a6066 !important; }
+:root[data-theme='light'] .forum-empty { color: #6a6066 !important; }
+:root[data-theme='light'] .forum-empty a { color: var(--tep-green) !important; }
+
+:root[data-theme='light'] .DocSearch-Button,
+:root[data-theme='light'] .search-input,
+:root[data-theme='light'] site-search button,
+:root[data-theme='light'] [class*='search'] button,
+:root[data-theme='light'] [class*='Search'] button {
+  background: #ffffff !important;
+  color: #1a1418 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
