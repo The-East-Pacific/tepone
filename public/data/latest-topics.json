@@ -1,7 +1,13 @@
 {
-  "updated": "2026-06-10T01:59:58.195Z",
+  "updated": "2026-06-10T04:04:14.421Z",
   "source": "https://forum.theeastpacific.com/latest.rss",
   "items": [
+    {
+      "title": "Welcome Liberza",
+      "url": "https://forum.theeastpacific.com/t/welcome-liberza/19870",
+      "author": "Liberza",
+      "date": "2026-06-10"
+    },
     {
       "title": "Welcome estyquesada",
       "url": "https://forum.theeastpacific.com/t/welcome-estyquesada/19869",
@@ -55,12 +61,6 @@
       "url": "https://forum.theeastpacific.com/t/welcome-henom17/19849",
       "author": "henom17",
       "date": "2026-06-01"
-    },
-    {
-      "title": "[PASSED] Repeal: “The Civil Charter of the World Assembly”",
-      "url": "https://forum.theeastpacific.com/t/passed-repeal-the-civil-charter-of-the-world-assembly/19846",
-      "author": "Bai_Lung",
-      "date": "2026-05-31"
     }
   ]
 }
