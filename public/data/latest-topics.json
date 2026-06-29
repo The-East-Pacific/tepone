@@ -1,7 +1,13 @@
 {
-  "updated": "2026-06-28T21:51:12.902Z",
+  "updated": "2026-06-29T02:03:50.853Z",
   "source": "https://forum.theeastpacific.com/latest.rss",
   "items": [
+    {
+      "title": "[E-2026-38] Provost of the 70th Magisterium",
+      "url": "https://forum.theeastpacific.com/t/e-2026-38-provost-of-the-70th-magisterium/19912",
+      "author": "Lucklife",
+      "date": "2026-06-28"
+    },
     {
       "title": "[PROPOSAL] Condemn Gynostan",
       "url": "https://forum.theeastpacific.com/t/proposal-condemn-gynostan/19911",
@@ -54,12 +60,6 @@
       "title": "[CAMPAIGN] Dimitri Provost 70?",
       "url": "https://forum.theeastpacific.com/t/campaign-dimitri-provost-70/19903",
       "author": "Dimitri",
-      "date": "2026-06-24"
-    },
-    {
-      "title": "[ELECTION] Ladona",
-      "url": "https://forum.theeastpacific.com/t/election-ladona/19902",
-      "author": "Ladona",
       "date": "2026-06-24"
     }
   ]
