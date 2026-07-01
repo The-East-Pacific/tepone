@@ -1,7 +1,13 @@
 {
-  "updated": "2026-07-01T04:13:40.399Z",
+  "updated": "2026-07-01T07:00:24.155Z",
   "source": "https://forum.theeastpacific.com/latest.rss",
   "items": [
+    {
+      "title": "Talvezout Map Claim",
+      "url": "https://forum.theeastpacific.com/t/talvezout-map-claim/19915",
+      "author": "talvezout",
+      "date": "2026-07-01"
+    },
     {
       "title": "[E-2026-38] Provost of the 70th Magisterium",
       "url": "https://forum.theeastpacific.com/t/e-2026-38-provost-of-the-70th-magisterium/19912",
@@ -55,12 +61,6 @@
       "url": "https://forum.theeastpacific.com/t/a-2026-36-hogs-amendment-omnibus/19904",
       "author": "Ladona",
       "date": "2026-06-25"
-    },
-    {
-      "title": "[CAMPAIGN] Dimitri Provost 70?",
-      "url": "https://forum.theeastpacific.com/t/campaign-dimitri-provost-70/19903",
-      "author": "Dimitri",
-      "date": "2026-06-24"
     }
   ]
 }
