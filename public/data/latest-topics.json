@@ -1,7 +1,13 @@
 {
-  "updated": "2026-07-03T01:27:04.957Z",
+  "updated": "2026-07-03T03:35:59.947Z",
   "source": "https://forum.theeastpacific.com/latest.rss",
   "items": [
+    {
+      "title": "[CAMPAIGN] American-Cascadia for Archon - An Old Face for a New East",
+      "url": "https://forum.theeastpacific.com/t/campaign-american-cascadia-for-archon-an-old-face-for-a-new-east/19926",
+      "author": "American-Cascadia",
+      "date": "2026-07-03"
+    },
     {
       "title": "[CAMPAIGN] Hail Irene Mayflower, the First Duchess of the East",
       "url": "https://forum.theeastpacific.com/t/campaign-hail-irene-mayflower-the-first-duchess-of-the-east/19925",
@@ -55,12 +61,6 @@
       "url": "https://forum.theeastpacific.com/t/talvezout-map-claim/19915",
       "author": "talvezout",
       "date": "2026-07-01"
-    },
-    {
-      "title": "[E-2026-38] Provost of the 70th Magisterium",
-      "url": "https://forum.theeastpacific.com/t/e-2026-38-provost-of-the-70th-magisterium/19912",
-      "author": "Lucklife",
-      "date": "2026-06-28"
     }
   ]
 }
