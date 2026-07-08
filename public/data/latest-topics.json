@@ -1,7 +1,13 @@
 {
-  "updated": "2026-07-08T14:22:20.360Z",
+  "updated": "2026-07-08T16:23:50.216Z",
   "source": "https://forum.theeastpacific.com/latest.rss",
   "items": [
+    {
+      "title": "Welcome TheHighOverseer",
+      "url": "https://forum.theeastpacific.com/t/welcome-thehighoverseer/19954",
+      "author": "TheHighOverseer",
+      "date": "2026-07-08"
+    },
     {
       "title": "Welcome Olruggio",
       "url": "https://forum.theeastpacific.com/t/welcome-olruggio/19950",
@@ -55,12 +61,6 @@
       "url": "https://forum.theeastpacific.com/t/n-2026-39-confirmation-of-dimitri-as-a-citizenship-official/19930",
       "author": "Ladona",
       "date": "2026-07-04"
-    },
-    {
-      "title": "Public Disclosure Form: Revolution",
-      "url": "https://forum.theeastpacific.com/t/public-disclosure-form-revolution/19928",
-      "author": "Revolution",
-      "date": "2026-07-03"
     }
   ]
 }
