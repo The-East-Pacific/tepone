@@ -1,7 +1,13 @@
 {
-  "updated": "2026-07-07T22:03:00.190Z",
+  "updated": "2026-07-08T01:18:32.818Z",
   "source": "https://forum.theeastpacific.com/latest.rss",
   "items": [
+    {
+      "title": "Welcome Olruggio",
+      "url": "https://forum.theeastpacific.com/t/welcome-olruggio/19950",
+      "author": "Olruggio",
+      "date": "2026-07-07"
+    },
     {
       "title": "[Campaign] Elect Domais Archon!",
       "url": "https://forum.theeastpacific.com/t/campaign-elect-domais-archon/19948",
@@ -54,12 +60,6 @@
       "title": "Public Disclosure Form: Revolution",
       "url": "https://forum.theeastpacific.com/t/public-disclosure-form-revolution/19928",
       "author": "Revolution",
-      "date": "2026-07-03"
-    },
-    {
-      "title": "[PASSED] Daybreak",
-      "url": "https://forum.theeastpacific.com/t/passed-daybreak/19927",
-      "author": "Bai_Lung",
       "date": "2026-07-03"
     }
   ]
